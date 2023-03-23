@@ -18,36 +18,36 @@ PLAYER_HEIGHT = 110
 
 
 #Mi marr karakterat
-RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "enemyred.png"))
+RED_SPACE_SHIP = pygame.image.load("enemyred.png")
 RED_SPACE_SHIP = pygame.transform.scale(RED_SPACE_SHIP, (PLAYER_WIDTH, PLAYER_HEIGHT))
 
-GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets", "enemygreen.png"))
+GREEN_SPACE_SHIP = pygame.image.load("enemygreen.png")
 GREEN_SPACE_SHIP = pygame.transform.scale(GREEN_SPACE_SHIP, (PLAYER_WIDTH, PLAYER_HEIGHT))
 
-BLUE_SPACE_SHIP = pygame.image.load(os.path.join("assets", "enemyblue.png"))
+BLUE_SPACE_SHIP = pygame.image.load("enemyblue.png")
 BLUE_SPACE_SHIP = pygame.transform.scale(BLUE_SPACE_SHIP, (PLAYER_WIDTH, PLAYER_HEIGHT))
 
 #lojtari
-YELLOW_SPACE_SHIP = pygame.image.load(os.path.join("assets", "player.png"))
+YELLOW_SPACE_SHIP = pygame.image.load("player.png")
 YELLOW_SPACE_SHIP = pygame.transform.scale(YELLOW_SPACE_SHIP, (PLAYER_WIDTH, PLAYER_HEIGHT))
 
 #plumat
-RED_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_red.png"))
-GREEN_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_green.png"))
-BLUE_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_blue.png"))
-YELLOW_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_yellow.png"))
+RED_LASER = pygame.image.load("pixel_laser_red.png")
+GREEN_LASER = pygame.image.load("pixel_laser_green.png")
+BLUE_LASER = pygame.image.load("pixel_laser_blue.png")
+YELLOW_LASER = pygame.image.load("pixel_laser_yellow.png")
 
 #background
-BG = pygame.image.load(os.path.join("assets", "Background_space.png"))
+BG = pygame.image.load("Background_space.png")
 BG = pygame.transform.scale(BG, (WIDTH, HEIGHT))
 
-MUSIC = pygame.mixer.Sound(os.path.join("assets", "music.mp3"))
+MUSIC = pygame.mixer.Sound("music.mp3")
 MUSIC.set_volume(0.05)
 
-SHOOT = pygame.mixer.Sound(os.path.join("assets", "shoot.mp3"))
+SHOOT = pygame.mixer.Sound("shoot.mp3")
 SHOOT.set_volume(0.006)
 
-HIT = pygame.mixer.Sound(os.path.join("assets", "hit.mp3"))
+HIT = pygame.mixer.Sound("hit.mp3")
 HIT.set_volume(0.06)
 
 class Laser:
@@ -166,7 +166,7 @@ def collide(obj1, obj2):
 
 def main():
     run = True
-    FPS = 144
+    FPS = 60
     level = 0
     lives = 5
     main_font = pygame.font.SysFont("cosmicsans", 50)
@@ -174,10 +174,10 @@ def main():
 
     enemies = []
     wave_length = 5
-    enemy_vel = 1
+    enemy_vel = 2
 
-    player_vel = 3
-    laser_vel = 4
+    player_vel = 6
+    laser_vel = 7
 
     player = Player(300, 650)
 
