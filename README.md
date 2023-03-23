@@ -10,7 +10,8 @@ Be careful! You only have 5 lives and your ammo is limited.
 Just download everything provided here and run "main.py"
 
 # Requirements 
-All you need is everything provided here you can download them by zip.
+All you need is everything provided here you can download them by zip or git clone them.
+They all need to be in the same folder
 And a copy of python 3.7 or earlier downloaded.
 Also make sure you have the pygame library downloaded.
 
