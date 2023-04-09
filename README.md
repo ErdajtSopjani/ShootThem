@@ -7,7 +7,8 @@ Kill and shoot as many as you can.
 Be careful! You only have 5 lives and your ammo is limited.
 
 # How to run
-Just download everything provided here and run "main.py"
+Just download everything provided here and run "main.py" or "main.exe"
+If you get any errors make sure you have pygame downloaded or just run "pip install pygame" or "python -m pip install pygame"
 
 # Requirements 
 All you need is everything provided here you can download them by zip or git clone them.
