@@ -1,6 +1,9 @@
 # ShootThem
 A single player space shooter game made with python
 
+![image](https://user-images.githubusercontent.com/120386306/232175445-9a493105-0bf3-4584-ae89-dc88ca9704c6.png) ![image](https://user-images.githubusercontent.com/120386306/232175448-ecd961ad-af7c-4152-b83b-01907089ef0d.png)
+
+
 # Goal
 The goal is to defend your home planet against the aliens.
 Kill and shoot as many as you can.
